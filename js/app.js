@@ -18,8 +18,6 @@ $(document).ready(function() {
                     tbody.append(row);
                 });
 
-                //
-
                 const newRateBaseCurrency = $("#new-rate-base-currency");
                 newRateBaseCurrency.empty();
 
@@ -28,8 +26,6 @@ $(document).ready(function() {
                     newRateBaseCurrency.append(`<option value="${currency.code}">${currency.code}</option>`);
                 });
 
-                //
-
                 const newRateTargetCurrency = $("#new-rate-target-currency");
                 newRateTargetCurrency.empty();
 
@@ -37,8 +33,6 @@ $(document).ready(function() {
                 $.each(data, function (index, currency) {
                     newRateTargetCurrency.append(`<option value="${currency.code}">${currency.code}</option>`);
                 });
-
-                //
 
                 const convertBaseCurrency = $("#convert-base-currency");
                 convertBaseCurrency.empty();
